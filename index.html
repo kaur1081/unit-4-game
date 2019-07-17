@@ -8,21 +8,22 @@
     <link type="text/css" href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Crystal Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Crystal Collector</title>
 </head>
 
 <body>
     <!-- bootstrap jumbotron head bar-->
     <div class="container">
-        <img class="backgrimg" src="assets/images/images (4).jpg" alt="background">
-        <div class="jumbotron" style="background-color: blue;
-        color: white;">
-            <h1 class="display-4">Crystal Guess</h1>
+        <!-- <img class="backgrimg" src="assets/images/500_F_96001945_noczdU9FnWWeedYCy3VuviKw1Sxw0pKe.jpg" alt="background"> -->
+        <div class="jumbotron" style="background-color:aqua;
+        color: blue;">
+            <h1 class="display-4">Crystal Collector</h1>
         </div>
         <!-- four crystals displayed as buttons on the page. -->
         <div class="row">
 
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h2 class="panel-title text-center">Rules</h2>
@@ -31,9 +32,7 @@
                         <p>
                             <ul>
                                 <li>1.Player will be shown a random number at the start of the game.</li>
-                                <li>2.When the player clicks on a crystal, it will add a specific amount of points to
-                                    the
-                                    player's total score. </li>
+                                <li>2.When the player clicks on a crystal, it will add a specific amount of points to the player's total score. </li>
                                 <li>3.When they do click one, score counter will be updated.</li>
                                 <li>4.The player wins if their total score matches the random number from the beginning
                                     of the game.
@@ -50,10 +49,19 @@
         </div>
 
         <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center crystals">Random Number</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2 class="panel-title text-center">Random Number:</h2>
+                        <h2 class="panel-title text-center" id="randomNumber">Your Total Score:</h2>
                     </div>
                 </div>
             </div>
@@ -70,35 +78,25 @@
                 </div>
             </div>
 
+            <div clas="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center crystals">Crystals</h3>
+                        </div>
+                        <div class="panel-body" id="stones">
+                            <img src="assets/images/images (1).jpg" alt="pink">
+                            <img src="assets/images/images (2).jpg" alt="purple">
+                            <img src="assets/images/download.jpg" alt="blue">
+                            <img src="assets/images/images.jpg" alt="white">
+                        </div>
 
-        </div>
-        <div clas="row">
-            <div class="col-lg-9">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center crystals">Crystals</h3>
-                    </div>
-                    <div class="panel-body">
-                        <img src="assets/images/images (1).jpg" alt="crys1">
-                        <img src="assets/images/images (2).jpg" alt="crys2">
-                        <img src="assets/images/download.jpg" alt="crys3">
-                        <img src="assets/images/images.jpg" alt="crys4">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h2 class="panel-title text-center crystals">Your Total Score:</h2>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
+        <script src="assets/javascript/game.js" alt="js"></script>
 </body>
 
 </html>
