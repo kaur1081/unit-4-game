@@ -29,22 +29,21 @@ function onPageLoad(){
 }
 // updateTotalScore/wins/losses
 function updateTotalScore(userSelection) {
-
+    
     totalScore += userSelection;
     document.getElementById('totalNumber').innerHTML = 'Total Score=' +totalScore;
-    
     if (randomNumber < totalScore){
         wins++
-       
+        onPageLoad()
         document.getElementById('Wins').innerHTML = 'Wins= ' + wins;
-       
-        alert("you win!")
+            alert("you win!")
     } else {
         Losses++
-      
         document.getElementById('Losses').innerHTML = 'losses= ' + losses;
-        }
+       }
     }
+
+  
 
 // when game start  onclick functions ||comparison  with wins/loses/ your Score-update||
 // add value to the stone and update score
@@ -76,11 +75,8 @@ function handleWhiteImageClickEvent(){
 }    
 document.getElementById("white").addEventListener("click",handleWhiteImageClickEvent);
 
-
-
 // reset to onpageload
 onPageLoad();
-
 
 
 

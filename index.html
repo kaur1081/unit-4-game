@@ -21,8 +21,8 @@
             <h1 class="display-4">Crystal Collector</h1>
         </div>
         <!-- four crystals displayed as buttons on the page. -->
+        <!-- first row of rules and instructions -->
         <div class="row">
-
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -32,7 +32,8 @@
                         <p>
                             <ul>
                                 <li>1.Player will be shown a random number at the start of the game.</li>
-                                <li>2.When the player clicks on a crystal, it will add a specific amount of points to the player's total score. </li>
+                                <li>2.When the player clicks on a crystal, it will add a specific amount of points to
+                                    the player's total score. </li>
                                 <li>3.When they do click one, score counter will be updated.</li>
                                 <li>4.The player wins if their total score matches the random number from the beginning
                                     of the game.
@@ -42,7 +43,6 @@
 
                             </ul>
                         </p>
-
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2 class="panel-title text-center crystals">Random Number</h2>
+                        <h2 class="panel-title text-center crystals" id="random">Random Number</h2>
                     </div>
                 </div>
             </div>
@@ -61,40 +61,37 @@
             <div class="col-lg-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2 class="panel-title text-center" id="randomNumber">Your Total Score:</h2>
+                        <h2 class="panel-title text-center" id="totalNumber">Total Score:</h2>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2 class="panel-title text-center"> Wins :</h2>
+                        <h2 class="panel-title text-center" id="Wins"> Wins :</h2>
 
 
-                        <h2 class="panel-title text-center"> Loses:</h2>
+                        <h2 class="panel-title text-center"id="Losses"> Losses:</h2>
                     </div>
 
 
                 </div>
             </div>
-
+            <br>
             <div clas="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title text-center crystals">Crystals</h3>
+                            <div class="panel-body" id="stones">
+                                <img src="assets/images/images (1).jpg" id="pink" alt="pink">
+                                <img src="assets/images/images (2).jpg" id="purple" alt="purple">
+                                <img src="assets/images/download.jpg" id="blue" alt="blue">
+                                <img src="assets/images/images.jpg" id="white" alt="white">
+                            </div>
                         </div>
-                        <div class="panel-body" id="stones">
-                            <img src="assets/images/images (1).jpg" alt="pink">
-                            <img src="assets/images/images (2).jpg" alt="purple">
-                            <img src="assets/images/download.jpg" alt="blue">
-                            <img src="assets/images/images.jpg" alt="white">
-                        </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
         <script src="assets/javascript/game.js" alt="js"></script>
 </body>
