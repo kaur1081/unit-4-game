@@ -33,18 +33,17 @@ function updateTotalScore(userSelection) {
     totalScore += userSelection;
     document.getElementById('totalNumber').innerHTML = 'Total Score=' +totalScore;
     
-    if (randomNumber < updateTotalScore){
+    if (randomNumber < totalScore){
         wins++
-        onPageLoad()
+       
         document.getElementById('Wins').innerHTML = 'Wins= ' + wins;
        
         alert("you win!")
     } else {
         Losses++
-        onPageLoad()
+      
         document.getElementById('Losses').innerHTML = 'losses= ' + losses;
-    
-     }
+        }
     }
 
 // when game start  onclick functions ||comparison  with wins/loses/ your Score-update||
