@@ -16,8 +16,8 @@ function getRandomNumber(min,max){
 
 // on pageupdate we want to see a random number displayed,  all the crystals have a value between 1-12.
 function onPageLoad(){
-
     totalScore     =   0;
+    document.getElementById('totalNumber').innerHTML = 'Total Score=' +totalScore;
     randomNumber   =   getRandomNumber(19,120);
     document.getElementById('random').innerHTML = randomNumber;
     console.log(randomNumber);
@@ -31,18 +31,20 @@ function onPageLoad(){
 function updateTotalScore(userSelection) {
     
     totalScore += userSelection;
-    document.getElementById('totalNumber').innerHTML = 'Total Score=' +totalScore;
+    document.getElementById('totalNumber').innerHTML = 'Total Score=' + totalScore;
     if (randomNumber === totalScore){
         
         wins++;
-        document.getElementById('Wins').innerHTML = 'Wins= ' + wins;
+        document.getElementById('wins').innerHTML = 'Wins= ' + wins;
         alert("you win! with score:" + totalScore);
         onPageLoad();
-    } else {
-        Losses++
-        document.getElementById('Losses').innerHTML = 'Losses= ' + Losses;
-       }
+    } else if(totalScore > randomNumber) {
+        losses++
+        document.getElementById('losses').innerHTML = 'Losses= ' + losses;
+        onPageLoad();
     }
+    
+}
 
   
 
