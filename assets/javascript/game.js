@@ -32,14 +32,15 @@ function updateTotalScore(userSelection) {
     
     totalScore += userSelection;
     document.getElementById('totalNumber').innerHTML = 'Total Score=' +totalScore;
-    if (randomNumber < totalScore){
-        wins++
-        onPageLoad()
+    if (randomNumber === totalScore){
+        
+        wins++;
         document.getElementById('Wins').innerHTML = 'Wins= ' + wins;
-            alert("you win!")
+        alert("you win! with score:" + totalScore);
+        onPageLoad();
     } else {
         Losses++
-        document.getElementById('Losses').innerHTML = 'losses= ' + losses;
+        document.getElementById('Losses').innerHTML = 'Losses= ' + Losses;
        }
     }
 
