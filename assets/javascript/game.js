@@ -18,25 +18,29 @@ function getRandomNumber(min,max){
 function onPageLoad(){
     totalScore     =   0;
     document.getElementById('totalNumber').innerHTML = 'Total Score=' +totalScore;
-    randomNumber   =   getRandomNumber(19,120);
+    randomNumber   =   10;//getRandomNumber(19,120);
     document.getElementById('random').innerHTML = randomNumber;
     console.log(randomNumber);
-    crystalPink    =   Math.floor(Math.random() * (12-1+1) + 1);
-    crystalPurple  =   Math.floor(Math.random() * (12-1+1) + 1);
-    crystalBlue    =   Math.floor(Math.random() * (12-1+1) + 1);
-    crystalWhite   =   Math.floor(Math.random() * (12-1+1) + 1);
+    crystalPink    =   10;//getRandomNumber(1,12);
+    crystalPurple  =   5;//getRandomNumber(1,12);
+    crystalBlue    =   getRandomNumber(1,12);
+    crystalWhite   =   getRandomNumber(1,12);
    
 }
+
+
 // updateTotalScore/wins/losses
 function updateTotalScore(userSelection) {
-    
+    console.log('UPDATE TOTAL SCORE (userSelection, totalScore)', userSelection, totalScore)
     totalScore += userSelection;
-    document.getElementById('totalNumber').innerHTML = 'Total Score=' + totalScore;
+    document.getElementById('totalNumber').innerHTML = 'Total Score = ' + totalScore;
+    console.log('totalScore', totalScore)
     if (randomNumber === totalScore){
         
         wins++;
         document.getElementById('wins').innerHTML = 'Wins= ' + wins;
-        alert("you win! with score:" + totalScore);
+        
+        confirm("you win! with score:" + totalScore);
         onPageLoad();
     } else if(totalScore > randomNumber) {
         losses++
@@ -46,7 +50,58 @@ function updateTotalScore(userSelection) {
     
 }
 
-  
+var crystals;
+var playNewGame;
+  function runGame() {
+
+      initGame();
+      const crystalKeys = Object.keys(crystals);
+      registerClickHandler(crystalKeys);
+      updateScoreboard(targetNumber, totalScore, win, lose);
+
+
+      var playNewGame;
+      if (playGame)
+  }
+
+  function initGame() {
+      targetNumber = getRandomNumber(19,120);
+      totatScore = 0;
+      wins = 0;
+      losses = 0;
+      crystals = {
+        pink: getRandomNumber(1,12),
+        purple: getRandomNumber(1,12),
+        blue: getRandomNumber(1,12),
+        white: getRandomNumber(1,12),
+    };
+  }
+
+  function registerClickHandlers(crystalKeyArr) {
+    crystalKeyArr.forEach(function(id) {
+        $('#' + id)
+            .attr('data-value', crystals[id])
+            .on("click", clickCrystal);
+    });
+  }
+
+  function clickCrystal() {
+    totalScore += $(this).attr('data-value');
+    if (totalScore === targetNumber) {
+        wins++;
+        initGame();
+    } else if (totalScore > targetNumber) {
+        losses++;
+        initGame();
+    }
+    updateScoreboard(targetNumber, totalScore, win, lose);
+
+
+  }
+
+  function updateScoreboard() {
+    
+  }
 
 // when game start  onclick functions ||comparison  with wins/loses/ your Score-update||
 // add value to the stone and update score
