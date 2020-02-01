@@ -1,3 +1,6 @@
+.container{
+    margin-top: 10px;
+}
 .backgrimg {
     min-height: 100%;
     min-width: 1024px;
@@ -8,15 +11,6 @@
     left: 0;
     z-index: -1;
 }
-
-/* h1{
-    height: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    background-color: brown;
-    /* padding-top: 0px; */
-    /* color: rgb(16, 16, 36);
-} */ 
 .container{
     background-color: rgb(109, 122, 196);
 }
@@ -26,14 +20,20 @@
     color: aqua;
     width: 100%;
 }
-#stones{
-    height: 30px;
-    width: 30px;
-}
+
 ul{
-    background-color: aqua;
-    color: blue;
+    background-color: rgb(136, 148, 218);
+    color: rgb(19, 19, 56);
 }
+#pink{
+    height: 200px;
+    width:200px;
+}
+#purple{
+    height: 200px;
+    width:200px;
+}
+
 h2{
     text-align-last: center;
     background-color: blue;
