@@ -18,11 +18,11 @@ h1{
     padding-top: 0px;
 }
 .container{
-    background-color: rgb(3, 19, 107);
+    background-color: rgb(109, 122, 196);
 }
 .panel-title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: blue;
+    background-color: rgb(64, 64, 109);
     color: aqua;
     width: 100%;
 }
