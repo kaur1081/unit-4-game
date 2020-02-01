@@ -76,6 +76,7 @@ var playNewGame;
         white: getRandomNumber(1,12),
     };
   }
+}
 
   function registerClickHandlers(crystalKeyArr) {
     crystalKeyArr.forEach(function(id) {
@@ -103,7 +104,7 @@ var playNewGame;
   function updateScoreboard() {
     
   }
-  }
+//   }
 // when game start  onclick functions ||comparison  with wins/loses/ your Score-update||
 // add value to the stone and update score
 
