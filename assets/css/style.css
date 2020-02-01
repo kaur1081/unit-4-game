@@ -33,7 +33,14 @@ ul{
     height: 200px;
     width:200px;
 }
-
+#blue{
+    height: 200px;
+    width:200px;
+}
+#white{
+    height: 200px;
+    width:200px;
+}
 h2{
     text-align-last: center;
     background-color: blue;
