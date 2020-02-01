@@ -45,9 +45,9 @@ ul{
     width:200px;
     padding:20px;
 }
-/* #stones{
-    padding:20px;
-} */
+#stones{
+    margin-left:90px;
+}
 h2{
     text-align-last: center;
     background-color: blue;
