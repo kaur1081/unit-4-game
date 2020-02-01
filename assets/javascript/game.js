@@ -61,8 +61,8 @@ var playNewGame;
 
 
       var playNewGame;
-      if (playGame)
-  }
+      if (playGame){
+  
 
   function initGame() {
       targetNumber = getRandomNumber(19,120);
@@ -84,6 +84,7 @@ var playNewGame;
             .on("click", clickCrystal);
     });
   }
+}
 
   function clickCrystal() {
     totalScore += $(this).attr('data-value');
@@ -102,7 +103,7 @@ var playNewGame;
   function updateScoreboard() {
     
   }
-
+  }
 // when game start  onclick functions ||comparison  with wins/loses/ your Score-update||
 // add value to the stone and update score
 
@@ -132,7 +133,7 @@ function handleWhiteImageClickEvent(){
     updateTotalScore(crystalWhite);
 }    
 document.getElementById("white").addEventListener("click",handleWhiteImageClickEvent);
-
+  
 // reset to onpageload
 onPageLoad();
 
