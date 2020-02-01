@@ -4,3 +4,6 @@
 
 -we used javascript,hml, and css.
 -Some logic issues were there which I cleared with online and TAs help.
+
+## Screenshot
+(https://github.com/kaur1081/unit-4-game/blob/master/assets/images/wrkin.jpg)
