@@ -12,3 +12,14 @@ Some logic issues were there which I cleared with online and TAs help.
 
 ## Screenshot
 ![ Crystal Collector! ](https://github.com/kaur1081/unit-4-game/blob/master/assets/images/wrkin.jpg)
+
+## Technologies used
+
+- Html
+- CSS
+- JavaScript
+- Bootstrap
+- Jquery
+- GoogleFont
+
+## Developer: Karishma Hattar
