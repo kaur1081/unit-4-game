@@ -7,7 +7,7 @@ Deploy Link for Crystal Collector !
 This is like a pshycic game. Where user playing is guessing the value of crystal to match the random given number.
 
 ## Screenshot
-![ Crystal Collector! ](https://github.com/kaur1081/unit-4-game/blob/master/assets/images/wrkin.jpg)
+![ Crystal Collector! ](https://github.com/kaur1081/unit-4-game/blob/master/assets/images/bgbg.jpg)
 
 ## Technologies used
 
